@@ -1,5 +1,6 @@
 import React from "react";
 import Template from "./Template";
+import { Helmet } from "react-helmet";
 import { calculateAge } from "../helpers/calculateAge";
 
 const name = "Coco";
@@ -26,19 +27,26 @@ const Coco = () => {
   const description = `Soy tranquila y amigable, tengo ${age} años y algunas alergias, pero eso no me impide disfrutar de la vida. 🐶🏠`;
 
   return (
-    <Template
-      profileImage={profileImage}
-      name={name}
-      birthDate={birthDate}
-      race={race}
-      description={description}
-      owner={owner}
-      socialMedia={socialMedia}
-      vaccines={vaccines}
-      observation={observation}
-      whatsappNumber={whatsappNumber}
-      whatsappMessage={whatsappMessage}
-    />
+    <>
+        <Helmet>
+            <title>Perfil de {name}</title>
+            <meta name="description" content="Toda la información de Coco esta aquí 🐾"/>
+            <meta property="og:image" content="/coco.png" />
+        </Helmet>
+        <Template
+        profileImage={profileImage}
+        name={name}
+        birthDate={birthDate}
+        race={race}
+        description={description}
+        owner={owner}
+        socialMedia={socialMedia}
+        vaccines={vaccines}
+        observation={observation}
+        whatsappNumber={whatsappNumber}
+        whatsappMessage={whatsappMessage}
+        />
+    </>
   );
 };
 
