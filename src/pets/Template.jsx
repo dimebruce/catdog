@@ -7,6 +7,7 @@ function Template({
   name,
   race,
   owner,
+  gender,
   description,
   vaccines,
   observation,
@@ -116,7 +117,7 @@ function Template({
                       <div className="col-auto">
                         <a
                           href={`https://wa.me/${whatsappNumber}?text=${encodedMessage}`} // Generar la URL con número y mensaje
-                          className="btn btn-outline-custom"
+                          className={`${gender === 'Male' ? 'btn btn-outline-primary' : 'btn btn-outline-custom'}`}
                           target="_blank"
                         >
                           <i className="bi bi-whatsapp fs-3"></i>
@@ -125,7 +126,7 @@ function Template({
                       <div className="col-auto">
                         <a
                           href={socialMedia}
-                          className="btn btn-outline-custom"
+                          className={`${gender === 'Male' ? 'btn btn-outline-primary' : 'btn btn-outline-custom'}`}
                           target="_blank"
                         >
                           <i className="bi bi-instagram fs-3"></i>

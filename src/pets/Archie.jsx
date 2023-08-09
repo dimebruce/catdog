@@ -3,29 +3,29 @@ import Template from "./Template";
 import { Helmet } from "react-helmet";
 import { calculateAge } from "../helpers/calculateAge";
 
-const name = "Coco";
-const birthDate = "10-02-2012";
-const race = "Maltés";
+const name = "Archie";
+const birthDate = "10-06-2021";
+const race = "Mixto";
+const gender = "Male"
 const owner = "Estefanía Lomelí Penn";
-const gender = "Female"
 const socialMedia =
   "https://www.instagram.com/eslomelipenn/";
 const whatsappNumber = "4433027526";
-const profileImage = "/coco.png"; // Ruta de la imagen
+const profileImage = "/archie.png"; // Ruta de la imagen
 const whatsappMessage = `Hola, ${owner}. Te contacto porque encontré a tu perro ${name}.`; // Mensaje personalizado
 const observation =
-"Soy ciega, sufro de alergias y tengo una condición en el corazón.";
+"No tengo problemas de ningún tipo, soy de bajo mantenimiento y muy sociable🤪.";
 const vaccines = [
-    { date: "08-08-2023", substance: "Giardia" },
+  { date: "08-08-2023", substance: "Giardia" },
   { date: "08-08-2023", substance: "Bordetella" },
   { date: "02-03-2023", substance: "Sextuple" },
   { date: "13-07-2023", substance: "Desparacitante; ONE" },
   // Puedes agregar más objetos de vacuna aquí
 ];
 
-const Coco = () => {
+const Archie = () => {
   const age = calculateAge(birthDate);
-  const description = `Soy tranquila y amigable, tengo ${age} años y soy ciega, pero eso no me impide disfrutar de la vida. 🐶🏠`;
+  const description = `Soy una alma tranquila y sociable, con ${age} años, pero siempre disfrutando de cada momento. 🐶🏠`;
 
   return (
     <>
@@ -52,4 +52,4 @@ const Coco = () => {
   );
 };
 
-export default Coco;
+export default Archie;
