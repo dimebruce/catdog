@@ -24,7 +24,7 @@ const vaccines = [
 
 const Coco = () => {
   const age = calculateAge(birthDate);
-  const description = `Soy tranquila y amigable, tengo ${age} años y algunas alergias, pero eso no me impide disfrutar de la vida. 🐶🏠`;
+  const description = `Soy tranquila y amigable, tengo ${age} años y soy ciega, pero eso no me impide disfrutar de la vida. 🐶🏠`;
 
   return (
     <>
