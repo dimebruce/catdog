@@ -31,8 +31,8 @@ const Archie = () => {
     <>
         <Helmet>
             <title>Perfil de {name}</title>
-            <meta name="description" content="Toda la información de Coco esta aquí 🐾"/>
-            <meta property="og:image" content="/coco.png" />
+            <meta name="description" content="Toda la información de Archie esta aquí 🐾"/>
+            <meta property="og:image" content="/archie.png" />
         </Helmet>
         <Template
         profileImage={profileImage}
